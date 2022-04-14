@@ -1,0 +1,252 @@
+<?xml version="1.0" ?>
+<robot name="assembly" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find assembly_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find assembly_description)/urdf/assembly.trans" />
+<xacro:include filename="$(find assembly_description)/urdf/assembly.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.049899943844531676 0.057556869263274094 0.2572802037178901" rpy="0 0 0"/>
+    <mass value="20.441261032629512"/>
+    <inertia ixx="0.17207" iyy="0.068578" izz="0.232088" ixy="0.0" iyz="-0.004793" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_leg__right_back_1">
+  <inertial>
+    <origin xyz="0.005000056155468294 -0.044194659102811396 -0.04419417382414284" rpy="0 0 0"/>
+    <mass value="0.27151534622634843"/>
+    <inertia ixx="0.000463" iyy="0.000234" izz="0.000234" ixy="0.0" iyz="-0.000217" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0501 0.089609 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg__right_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0501 0.089609 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg__right_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_leg_right_front_1">
+  <inertial>
+    <origin xyz="0.005000056155468335 -0.04419465910284545 -0.04419417382417698" rpy="0 0 0"/>
+    <mass value="0.27151534622634843"/>
+    <inertia ixx="0.000463" iyy="0.000234" izz="0.000234" ixy="0.0" iyz="-0.000217" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0501 -0.190391 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg_right_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0501 -0.190391 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg_right_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_right_front_1">
+  <inertial>
+    <origin xyz="0.005000056155468349 0.03662596669271194 -0.052344199737918734" rpy="0 0 0"/>
+    <mass value="0.27816688681604296"/>
+    <inertia ixx="0.000488" iyy="0.000325" izz="0.000168" ixy="-0.0" iyz="0.000216" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0601 -0.102002 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_right_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0601 -0.102002 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_right_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_leg_left_front_1_1">
+  <inertial>
+    <origin xyz="-0.004999943844531757 -0.044194659102845396 -0.04419417382417709" rpy="0 0 0"/>
+    <mass value="0.27151534622634843"/>
+    <inertia ixx="0.000463" iyy="0.000234" izz="0.000234" ixy="0.0" iyz="-0.000217" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1499 -0.190391 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg_left_front_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1499 -0.190391 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg_left_front_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_left_front_1">
+  <inertial>
+    <origin xyz="-0.004999943844531812 0.03662596669271169 -0.052344199737918484" rpy="0 0 0"/>
+    <mass value="0.278166886816043"/>
+    <inertia ixx="0.000488" iyy="0.000325" izz="0.000168" ixy="0.0" iyz="0.000216" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1599 -0.102002 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_left_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1599 -0.102002 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_left_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_leg_left_back_1">
+  <inertial>
+    <origin xyz="-0.0049999438445317845 -0.04419465910284537 -0.04419417382417709" rpy="0 0 0"/>
+    <mass value="0.27151534622634843"/>
+    <inertia ixx="0.000463" iyy="0.000234" izz="0.000234" ixy="0.0" iyz="-0.000217" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1499 0.089609 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg_left_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1499 0.089609 -0.255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/upper_leg_left_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_leg_back_1">
+  <inertial>
+    <origin xyz="-0.004999943844531812 0.036625966692712064 -0.05234419973791869" rpy="0 0 0"/>
+    <mass value="0.27816688681604373"/>
+    <inertia ixx="0.000488" iyy="0.000325" izz="0.000168" ixy="-0.0" iyz="0.000216" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1599 0.177998 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_leg_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1599 0.177998 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_leg_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_right_back_1">
+  <inertial>
+    <origin xyz="0.005000056155468294 0.03666053738977171 -0.05231999307523612" rpy="0 0 0"/>
+    <mass value="0.2781668868160432"/>
+    <inertia ixx="0.000488" iyy="0.000325" izz="0.000168" ixy="0.0" iyz="0.000216" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0601 0.177998 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_right_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0601 0.177998 -0.166612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_description/meshes/lower_right_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev15" type="continuous">
+  <origin xyz="0.0501 -0.089609 0.255" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="upper_leg__right_back_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Rev16" type="continuous">
+  <origin xyz="0.0501 0.190391 0.255" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="upper_leg_right_front_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Rev17" type="continuous">
+  <origin xyz="0.01 -0.088389 -0.088388" rpy="0 0 0"/>
+  <parent link="upper_leg_right_front_1"/>
+  <child link="lower_right_front_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Rev18" type="continuous">
+  <origin xyz="-0.1499 0.190391 0.255" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="upper_leg_left_front_1_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev19" type="continuous">
+  <origin xyz="-0.01 -0.088389 -0.088388" rpy="0 0 0"/>
+  <parent link="upper_leg_left_front_1_1"/>
+  <child link="lower_left_front_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Rev20" type="continuous">
+  <origin xyz="-0.1499 -0.089609 0.255" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="upper_leg_left_back_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev21" type="continuous">
+  <origin xyz="-0.01 -0.088389 -0.088388" rpy="0 0 0"/>
+  <parent link="upper_leg_left_back_1"/>
+  <child link="lower_leg_back_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev22" type="continuous">
+  <origin xyz="0.01 -0.088389 -0.088388" rpy="0 0 0"/>
+  <parent link="upper_leg__right_back_1"/>
+  <child link="lower_right_back_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+</robot>
